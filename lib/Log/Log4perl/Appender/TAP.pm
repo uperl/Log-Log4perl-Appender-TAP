@@ -12,6 +12,7 @@ our @ISA = qw( Log::Log4perl::Appender );
 =head1 SYNOPSIS
 
  use Test::More tests => 1;
+ use Log::Log4perl;
  
  LOG::Log4perl::init(\<<CONF);
  log4perl.rootLogger=ERROR, TAP
