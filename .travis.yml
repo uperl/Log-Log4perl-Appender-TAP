@@ -2,6 +2,7 @@ language: perl
 
 install:
   - cpanm -n Log::Log4perl
+  - cpanm -n Test::Builder::Module
 
 perl:
   - "5.8"
