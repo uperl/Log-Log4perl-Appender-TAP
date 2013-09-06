@@ -4,11 +4,12 @@ Append to TAP output
 
 # VERSION
 
-version 0.01
+version 0.02
 
 # SYNOPSIS
 
     use Test::More tests => 1;
+    use Log::Log4perl;
     
 
     LOG::Log4perl::init(\<<CONF);
