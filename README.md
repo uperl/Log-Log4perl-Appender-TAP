@@ -2,16 +2,11 @@
 
 Append to TAP output
 
-# VERSION
-
-version 0.02
-
 # SYNOPSIS
 
     use Test::More tests => 1;
     use Log::Log4perl;
     
-
     LOG::Log4perl::init(\<<CONF);
     log4perl.rootLogger=ERROR, TAP
     log4perl.appender.TAP=Log::Log4perl::Appender::TAP
@@ -20,11 +15,9 @@ version 0.02
     log4perl.appender.TAP=layout.ConversionPattern="[%rms] %m%n
     CONF
     
-
     DEBUG "this message doesn't see the light of day";
     ERROR "This gets logged to TAP using diag";
     
-
     pass 'okay';
 
 # DESCRIPTION
