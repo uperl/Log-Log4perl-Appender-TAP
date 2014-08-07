@@ -23,7 +23,7 @@ Append to TAP output
 # DESCRIPTION
 
 This very simple appender sends log output to TAP using
-[Test::Builder](http://search.cpan.org/perldoc?Test::Builder).  It only takes one special argument,
+[Test::Builder](https://metacpan.org/pod/Test::Builder).  It only takes one special argument,
 the method, which can be either `diag` or `note`.
 
 # AUTHOR
