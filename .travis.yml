@@ -4,7 +4,7 @@ sudo: false
 
 install:
   - cpanm -n Log::Log4perl
-  - cpanm -n Test::Builder::Module
+  - cpanm -n Test2 Test2::Suite
 
 perl:
   - "5.8"

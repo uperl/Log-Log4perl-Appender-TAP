@@ -12,7 +12,8 @@ my $post_diag;
 $modules{$_} = $_ for qw(
   ExtUtils::MakeMaker
   Log::Log4perl
-  Test::Builder::Module
+  Test2
+  Test2::Suite
   Test::More
 );
 

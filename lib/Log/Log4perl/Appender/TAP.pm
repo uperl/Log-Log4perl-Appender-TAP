@@ -2,7 +2,7 @@ package Log::Log4perl::Appender::TAP;
 
 use strict;
 use warnings;
-use Test::Builder::Module;
+use Test2::API qw( context );
 our @ISA = qw( Log::Log4perl::Appender );
 
 # ABSTRACT: Append to TAP output
@@ -40,19 +40,18 @@ sub new
   my $class = ref $proto || $proto;
   my %args = @_;
   bless {
-    builder => Test::Builder::Module->builder,
     method  => $args{method} || 'note',
   }, $class;
 }
-
-sub _builder { shift->{builder} }
 
 sub log
 {
   my $self = shift;
   my %args = @_;
   my $method = $self->{method};
-  $self->_builder->$method($args{message});
+  my $ctx = context();
+  $ctx->$method($args{message});
+  $ctx->release;
   return;
 }
 
