@@ -2,6 +2,7 @@ package Log::Log4perl::Appender::TAP;
 
 use strict;
 use warnings;
+use 5.008001;
 use Test2::API qw( context );
 our @ISA = qw( Log::Log4perl::Appender );
 
