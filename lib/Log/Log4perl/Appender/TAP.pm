@@ -18,7 +18,7 @@ our @ISA = qw( Log::Log4perl::Appender );
  log4perl.appender.TAP=Log::Log4perl::Appender::TAP
  log4perl.appender.TAP.method=diag
  log4perl.appender.TAP=layout=PatternLayout
- log4perl.appender.TAP=layout.ConversionPattern="[%rms] %m%n
+ log4perl.appender.TAP=layout.ConversionPattern="[%rms] %m%n"
  CONF
  
  DEBUG "this message doesn't see the light of day";
