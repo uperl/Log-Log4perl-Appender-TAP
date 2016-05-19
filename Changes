@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+
+0.03      2016-05-19 08:29:24 -0400
   - Migrate internals and tests to Test2
 
 0.02      2013-09-05 07:27:23 -0400
