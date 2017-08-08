@@ -11,7 +11,7 @@ our @ISA = qw( Log::Log4perl::Appender );
 
 =head1 SYNOPSIS
 
- use Test::More tests => 1;
+ use Test2::V0;
  use Log::Log4perl;
  
  LOG::Log4perl::init(\<<CONF);
@@ -25,12 +25,10 @@ our @ISA = qw( Log::Log4perl::Appender );
  DEBUG "this message doesn't see the light of day";
  ERROR "This gets logged to TAP using diag";
  
- pass 'okay';
-
 =head1 DESCRIPTION
 
-This very simple appender sends log output to TAP using
-L<Test::Builder>.  It only takes one special argument,
+This very simple appender sends log output via L<Test2::API> to TAP
+(or any other format supported by L<Test2::API>).  It only takes one special argument,
 the method, which can be either C<diag> or C<note>.
 
 =cut

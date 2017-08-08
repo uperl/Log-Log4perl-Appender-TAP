@@ -1,6 +1,10 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+  - Update documentation to reflect that we are now using
+    Test2::API instead of Test::Builder (although still works
+    with Test::Builder, so long as you have upgraded to
+    Test2::API).
 
 0.03      2016-05-19 08:29:24 -0400
   - Migrate internals and tests to Test2

@@ -4,7 +4,7 @@ Append to TAP output
 
 # SYNOPSIS
 
-    use Test::More tests => 1;
+    use Test2::V0;
     use Log::Log4perl;
     
     LOG::Log4perl::init(\<<CONF);
@@ -17,13 +17,11 @@ Append to TAP output
     
     DEBUG "this message doesn't see the light of day";
     ERROR "This gets logged to TAP using diag";
-    
-    pass 'okay';
 
 # DESCRIPTION
 
-This very simple appender sends log output to TAP using
-[Test::Builder](https://metacpan.org/pod/Test::Builder).  It only takes one special argument,
+This very simple appender sends log output via [Test2::API](https://metacpan.org/pod/Test2::API) to TAP
+(or any other format supported by [Test2::API](https://metacpan.org/pod/Test2::API)).  It only takes one special argument,
 the method, which can be either `diag` or `note`.
 
 # AUTHOR

@@ -1,4 +1,4 @@
-use Test2::Bundle::Extended;
+use Test2::V0 -no_srand => 1;
 use Log::Log4perl qw( :easy );
 
 Log::Log4perl::init(\<<CONF);
