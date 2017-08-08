@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+
+0.04      2017-08-07 20:50:57 -0400
   - Update documentation to reflect that we are now using
     Test2::API instead of Test::Builder (although still works
     with Test::Builder, so long as you have upgraded to
