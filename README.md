@@ -21,8 +21,10 @@ Append to TAP output
 # DESCRIPTION
 
 This very simple appender sends log output via [Test2::API](https://metacpan.org/pod/Test2::API) to TAP
-(or any other format supported by [Test2::API](https://metacpan.org/pod/Test2::API)).  It only takes one special argument,
-the method, which can be either `diag` or `note`.
+(or any other format supported by [Test2::API](https://metacpan.org/pod/Test2::API)).  It also works with
+[Test::Builder](https://metacpan.org/pod/Test::Builder) and [Test::More](https://metacpan.org/pod/Test::More) so long as you have [Test2::API](https://metacpan.org/pod/Test2::API)
+installed.  It only takes one special argument, the method, which can
+be either `diag` or `note`.
 
 # AUTHOR
 

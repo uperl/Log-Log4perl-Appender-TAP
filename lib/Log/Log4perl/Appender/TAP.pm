@@ -28,8 +28,10 @@ our @ISA = qw( Log::Log4perl::Appender );
 =head1 DESCRIPTION
 
 This very simple appender sends log output via L<Test2::API> to TAP
-(or any other format supported by L<Test2::API>).  It only takes one special argument,
-the method, which can be either C<diag> or C<note>.
+(or any other format supported by L<Test2::API>).  It also works with
+L<Test::Builder> and L<Test::More> so long as you have L<Test2::API>
+installed.  It only takes one special argument, the method, which can
+be either C<diag> or C<note>.
 
 =cut
 
