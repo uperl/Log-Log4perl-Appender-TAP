@@ -12,6 +12,7 @@ my $post_diag;
 $modules{$_} = $_ for qw(
   ExtUtils::MakeMaker
   Log::Log4perl
+  Log::Log4perl::Appender
   Test2::API
   Test2::V0
 );
