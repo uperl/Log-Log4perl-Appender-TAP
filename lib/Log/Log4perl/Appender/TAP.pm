@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use 5.008001;
 use Test2::API qw( context );
-use base qw( Log::Log4perl::Appender );
+use parent qw( Log::Log4perl::Appender );
 
 # ABSTRACT: Append to TAP output
 # VERSION

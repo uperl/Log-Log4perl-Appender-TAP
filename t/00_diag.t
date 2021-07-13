@@ -15,6 +15,7 @@ $modules{$_} = $_ for qw(
   Log::Log4perl::Appender
   Test2::API
   Test2::V0
+  parent
 );
 
 
