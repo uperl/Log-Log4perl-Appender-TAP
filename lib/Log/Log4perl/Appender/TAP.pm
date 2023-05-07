@@ -24,10 +24,10 @@ use parent qw( Log::Log4perl::Appender );
  
  DEBUG "this message doesn't see the light of day";
  ERROR "This gets logged to TAP using diag";
- 
+
 =head1 DESCRIPTION
 
-This very simple appender sends log output via L<Test2::API> to TAP
+This very simple L<Log::Log4perl> appender sends log output via L<Test2::API> to TAP
 (or any other format supported by L<Test2::API>).  It also works with
 L<Test::Builder> and L<Test::More> so long as you have L<Test2::API>
 installed.  It only takes one special argument, the method, which can
@@ -57,3 +57,19 @@ sub log
 }
 
 1;
+
+=head1 SEE ALSO
+
+=over 4
+
+=item L<Log::Log4perl>
+
+Main module documentation for C<Log4perl>.
+
+=item L<Log::Dispatch::TAP>
+
+Similar module but for L<Log::Dispatch> instead of C<Log4perl>.
+
+=back
+
+=cut
