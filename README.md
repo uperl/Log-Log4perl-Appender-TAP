@@ -8,7 +8,7 @@ Append to TAP output
 use Test2::V0;
 use Log::Log4perl;
 
-LOG::Log4perl::init(\<<CONF);
+Log::Log4perl::init(\<<CONF);
 log4perl.rootLogger=ERROR, TAP
 log4perl.appender.TAP=Log::Log4perl::Appender::TAP
 log4perl.appender.TAP.method=diag
