@@ -6,18 +6,31 @@ Append to TAP output
 
 ```perl
 use Test2::V0;
-use Log::Log4perl;
+use Log::Log4perl qw( :easy );
 
 Log::Log4perl::init(\<<CONF);
 log4perl.rootLogger=ERROR, TAP
 log4perl.appender.TAP=Log::Log4perl::Appender::TAP
 log4perl.appender.TAP.method=diag
-log4perl.appender.TAP=layout=PatternLayout
-log4perl.appender.TAP=layout.ConversionPattern="[%rms] %m%n"
+log4perl.appender.TAP.layout=PatternLayout
+log4perl.appender.TAP.layout.ConversionPattern="[%rms] %m"
 CONF
 
 DEBUG "this message doesn't see the light of day";
 ERROR "This gets logged to TAP using diag";
+
+ok 1;
+
+done_testing;
+```
+
+outputs:
+
+```
+# Seeded srand with seed '20250911' from local date.
+# "[0ms] This gets logged to TAP using diag"
+ok 1
+1..1
 ```
 
 # DESCRIPTION
