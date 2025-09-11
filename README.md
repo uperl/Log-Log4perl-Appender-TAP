@@ -1,4 +1,4 @@
-# Log::Log4perl::Appender::TAP ![linux](https://github.com/uperl/Log-Log4perl-Appender-TAP/workflows/linux/badge.svg) ![macos](https://github.com/uperl/Log-Log4perl-Appender-TAP/workflows/macos/badge.svg) ![windows](https://github.com/uperl/Log-Log4perl-Appender-TAP/workflows/windows/badge.svg)
+# Log::Log4perl::Appender::TAP ![linux](https://github.com/uperl/Log-Log4perl-Appender-TAP/workflows/linux/badge.svg)
 
 Append to TAP output
 
