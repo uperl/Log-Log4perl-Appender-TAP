@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+
+0.06      2025-09-11 06:27:21 -0600
   - Fixed incorrect capitalization in synopsis
 
 0.05      2023-05-07 06:09:46 -0600
